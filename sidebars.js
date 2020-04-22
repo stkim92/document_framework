@@ -769,11 +769,11 @@ module.exports = {
 	],
 	*/
     Design_Guide: [
-	'Design Guide/design_guide',
-	'Design Guide/hardware_design_guide',
-	'Design Guide/package_information',
-	'Design Guide/ir_reflow_profile',
-	'Design Guide/eagle_cad_library_of_wiznet_products'
+	'Design-Guide/design_guide',
+	'Design-Guide/hardware_design_guide',
+	'Design-Guide/package_information',
+	'Design-Guide/ir_reflow_profile',
+	'Design-Guide/eagle_cad_library_of_wiznet_products'
 	]
 	/*,
 	VAR_Products_using_WIZnet: [
