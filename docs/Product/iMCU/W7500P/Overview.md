@@ -1,14 +1,14 @@
 ---
 id: overview
 title: Overview
-date: 2020-03-
+date: 2020-04-03
 ---
 
 
 ## Content
 
 # W7500P
-![Figure 1 W7500 Chip](http://wizwiki.net/wiki/lib/exe/fetch.php?media=products:w7500p:20150908_171109.png "Figure 1 W7500P Chip")
+![Figure 1 W7500 Chip](/document_framework/img/products/w7500p/20150908_171109.png)
 
 ----
 
@@ -56,10 +56,10 @@ The TCP/IP core is a market-proven hardwired TCP/IP stack and PHY is IC plus IP1
 
 
 ## Details
-- [Pin Assignment](http://wizwiki.net/wiki/doku.php?id=products:w7500p:overview:pinassignment)
-- [System and Memory](http://wizwiki.net/wiki/doku.php?id=products:w7500:overview:systemandmemory)
-- [Interrupt and Events](http://wizwiki.net/wiki/doku.php?id=products:w7500:overview:intandevents)
-- [Power supply](http://wizwiki.net/wiki/doku.php?id=products:w7500:overview:powersupply)
-- [Booting Sequence](http://wizwiki.net/wiki/doku.php?id=products:w7500:overview:booting)
-- [Electrical Characteristics](http://wizwiki.net/wiki/doku.php?id=products:w7500p:overview:electric)
-- [W7500P Ref.Schematic](http://wizwiki.net/wiki/doku.php?id=products:w7500p:ref_sch)
+- [Pin Assignment](Pin_Assignment.md)
+- [System and Memory](System_and_Memory.md)
+- [Interrupt and Events](Interrupt_and_Event.md)
+- [Power supply](Power_Supply.md)
+- [Booting Sequence](Booting_Sequence.md)
+- [Electrical Characteristics](Electrical_Characteristics.md)
+- [W7500P Ref. Schematic](W7500P_Ref.Schematic.md)
