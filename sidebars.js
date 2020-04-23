@@ -767,7 +767,6 @@ module.exports = {
 		],
     },
 	],
-	*/
     Design_Guide: [
 	'Design-Guide/design_guide',
 	'Design-Guide/hardware_design_guide',
@@ -782,6 +781,5 @@ module.exports = {
 	'VAR Products using WIZnet/wi_fi_shield',
 	'VAR Products using WIZnet/third_party'
 	],
-	*/
   },
 };
