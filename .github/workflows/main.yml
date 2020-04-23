@@ -40,7 +40,7 @@ jobs:
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: ./build/
         ##################################################   
-    - name: Moving images to gh-pages directory
+    #- name: Moving images to gh-pages directory
      ## working-directory: master
       #run: chmod +x scripts/update-images.sh
    ################################################
