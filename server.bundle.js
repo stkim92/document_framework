@@ -222,7 +222,7 @@ var MDXContext = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext({});
 var withMDXComponents = function withMDXComponents(Component) {
   return function (props) {
     var allComponents = useMDXComponents(props.components);
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, _extends({}, props, {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, _extends({}, props, {
       components: allComponents
     }));
   };
@@ -239,7 +239,7 @@ var useMDXComponents = function useMDXComponents(components) {
 };
 var MDXProvider = function MDXProvider(props) {
   var allComponents = useMDXComponents(props.components);
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MDXContext.Provider, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MDXContext.Provider, {
     value: allComponents
   }, props.children);
 };
