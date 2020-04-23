@@ -25,12 +25,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
     
     - name: Installation
-      working-directory: website
       run: yarn
    
    
     - name: Build
-      working-directory: website
       run: yarn build
 
     - name: Deploy 
