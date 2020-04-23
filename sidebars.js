@@ -173,9 +173,9 @@ module.exports = {
 		'Product/S2E Module/s2e_module',
 		{
         type: 'category',
-        label: 'W5500S2E-R1',
+        label: 'W7500S2E-R1',
         items: [
-		'Product/S2E Module/W5500S2E-R1/w5500s2e_r1'
+		'Product/S2E Module/W7500S2E-R1/w5500s2e_r1'
 		],
 		},
 		{
