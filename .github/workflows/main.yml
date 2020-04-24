@@ -9,6 +9,8 @@ on:
   pull_request:
     branches:
       - master
+env:
+  NODE_OPTIONS: --max_old_space_size=4096
 
 jobs:
   build:
@@ -25,9 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
 	  
     - name: Installation
-      run: |
-	  yarn
-	  export NODE_OPTIONS="--max_old_space_size=4096"
+      run: yarn
 	  
     - name: Build
       run: yarn build
