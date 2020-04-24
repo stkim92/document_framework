@@ -23,12 +23,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-		
-    - name: prepare
-      run: export NODE_OPTIONS="--max_old_space_size=4096"
 	  
     - name: Installation
-      run: yarn
+      run: |
+	  yarn
+	  export NODE_OPTIONS="--max_old_space_size=4096"
+	  
     - name: Build
       run: yarn build
 
