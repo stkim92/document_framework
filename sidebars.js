@@ -546,6 +546,7 @@ module.exports = {
 		}
 		],
     },
+	/*
 	{
         type: 'category',
         label: 'Wi-Fi Module',
@@ -670,7 +671,7 @@ module.exports = {
 		}
 		],
     },
-	/*
+	*/
 	{
         type: 'category',
         label: 'Mbed WIZwiki Platform',
@@ -754,7 +755,6 @@ module.exports = {
 		}
 		],
     },
-	*/
 	{
         type: 'category',
         label: 'Open Source Hardware',
