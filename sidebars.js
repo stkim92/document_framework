@@ -58,6 +58,7 @@ module.exports = {
 		}
 		],
     },
+	/*
 	{
         type: 'category',
         label: 'Pre-programmed MCU',
@@ -751,6 +752,7 @@ module.exports = {
 		],
     },
 	{
+	*/
         type: 'category',
         label: 'Open Source Hardware',
         items: [
