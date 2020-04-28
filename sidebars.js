@@ -32,7 +32,7 @@ module.exports = {
         label: 'Documents',
         items: [
 		'Product/iMCU/W7500/documents/appnote/how_to_install_keil',
-		'Product/iMCU/W7500/documents/appnote/how_to_make_keil_new_project_for_w7500',
+		//'Product/iMCU/W7500/documents/appnote/how_to_make_keil_new_project_for_w7500',
 		'Product/iMCU/W7500/documents/appnote/how_to_use_isp_tool',
 		'Product/iMCU/W7500/documents/appnote/how_to_use_mdk_for_w7500_peripherals_examples',
 		'Product/iMCU/W7500/documents/appnote/how_to_use_gcc_for_w7500_peripherals_examples'
