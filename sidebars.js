@@ -167,7 +167,6 @@ module.exports = {
 		}
 		],
     },
-	/*
 	{
         type: 'category',
         label: 'S2E Module',
@@ -433,7 +432,6 @@ module.exports = {
 		}
 		],
     },
-	*/
 	{
         type: 'category',
         label: 'ioModule',
