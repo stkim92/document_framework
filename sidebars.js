@@ -11,6 +11,7 @@ module.exports = {
 	
     Products: [
 	'Product/products',
+	/*
 	{
         type: 'category',
         label: 'iMCU',
@@ -58,6 +59,7 @@ module.exports = {
 		}
 		],
     },
+	*/
 	/*
 	{
         type: 'category',
@@ -74,6 +76,8 @@ module.exports = {
 		}
 		],
     },
+	*/
+	/*
 	{
         type: 'category',
         label: 'iEthernet',
@@ -167,6 +171,8 @@ module.exports = {
 		}
 		],
     },
+	*/
+	/*
 	{
         type: 'category',
         label: 'S2E Module',
@@ -432,6 +438,8 @@ module.exports = {
 		}
 		],
     },
+	*/
+	/*
 	{
         type: 'category',
         label: 'ioModule',
@@ -519,6 +527,8 @@ module.exports = {
 		}
 		],
     },
+	*/
+	/*
 	{
         type: 'category',
         label: 'App Module',
@@ -544,6 +554,8 @@ module.exports = {
 		}
 		],
     },
+	*/
+	/*
 	{
         type: 'category',
         label: 'Wi-Fi Module',
@@ -668,6 +680,8 @@ module.exports = {
 		}
 		],
     },
+	*/
+	/*
 	{
         type: 'category',
         label: 'Mbed WIZwiki Platform',
@@ -751,7 +765,6 @@ module.exports = {
 		}
 		],
     },
-	{
 	*/
         type: 'category',
         label: 'Open Source Hardware',
