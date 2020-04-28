@@ -546,7 +546,6 @@ module.exports = {
 		}
 		],
     },
-	/*
 	{
         type: 'category',
         label: 'Wi-Fi Module',
@@ -671,7 +670,6 @@ module.exports = {
 		}
 		],
     },
-	*/
 	/*
 	{
         type: 'category',
