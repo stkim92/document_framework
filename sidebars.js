@@ -57,6 +57,7 @@ module.exports = {
 		}
 		],
     },
+	/*
 	{
         type: 'category',
         label: 'Pre-programmed MCU',
@@ -72,6 +73,8 @@ module.exports = {
 		}
 		],
     },
+	*/
+	/*
 	{
         type: 'category',
         label: 'iEthernet',
@@ -165,6 +168,7 @@ module.exports = {
 		}
 		],
     },
+	*/
 	/*
 	{
         type: 'category',
