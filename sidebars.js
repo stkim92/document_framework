@@ -8,7 +8,6 @@
 module.exports = {
   someSidebar: {
 	'WIZnet Document Wiki': ['introduction'],
-	
     Products: [
 	'Product/products',
 	/*
@@ -26,7 +25,7 @@ module.exports = {
 		'Product/iMCU/W7500/interrupt_and_event',
 		'Product/iMCU/W7500/power_supply',
 		'Product/iMCU/W7500/booting_sequence',
-		//'Product/iMCU/W7500/electrical_characteristics',
+		'Product/iMCU/W7500/electrical_characteristics',
 		'Product/iMCU/W7500/w7500_ref_schematic',
 		'Product/iMCU/W7500/documents',
 		'Product/iMCU/W7500/peripherals',
@@ -44,7 +43,7 @@ module.exports = {
 		'Product/iMCU/W7500P/interrupt_and_event',
 		'Product/iMCU/W7500P/power_supply',
 		'Product/iMCU/W7500P/booting_sequence',
-		//'Product/iMCU/W7500P/electrical_characteristics',
+		'Product/iMCU/W7500P/electrical_characteristics',
 		'Product/iMCU/W7500P/w7500p_ref_schematic',
 		'Product/iMCU/W7500P/documents',
 		'Product/iMCU/W7500P/peripherals',
@@ -127,9 +126,9 @@ module.exports = {
         items: [
 		'Product/iEthernet/W5500/overview',
 		'Product/iEthernet/W5500/datasheet',
-		//'Product/iEthernet/W5500/driver',
+		'Product/iEthernet/W5500/driver',
 		'Product/iEthernet/W5500/ref_schematic',
-		//'Product/iEthernet/W5500/migration_from_w5200',
+		'Product/iEthernet/W5500/migration_from_w5200',
 		{
         type: 'category',
         label: 'Application',
@@ -325,7 +324,7 @@ module.exports = {
 		'Product/S2E Module/WIZ752SR-12x Series/WIZ752SR-120/configuration_tool_manual_new-[EN]',
 		'Product/S2E Module/WIZ752SR-12x Series/WIZ752SR-120/cli_config_tool_tutorial',
 		'Product/S2E Module/WIZ752SR-12x Series/WIZ752SR-120/command_manual-[KO]',
-		//'Product/S2E Module/WIZ752SR-12x Series/WIZ752SR-120/command_manual-[EN]',
+		'Product/S2E Module/WIZ752SR-12x Series/WIZ752SR-120/command_manual-[EN]',
 		'Product/S2E Module/WIZ752SR-12x Series/WIZ752SR-120/trouble_shooting-[KO]',
 		'Product/S2E Module/WIZ752SR-12x Series/WIZ752SR-120/trouble_shooting-[EN]',
 		'Product/S2E Module/WIZ752SR-12x Series/WIZ752SR-120/datasheet',
@@ -347,7 +346,7 @@ module.exports = {
 		'Product/S2E Module/WIZ752SR-12x Series/WIZ752SR-125/configuration_tool_manual_new-[EN]',
 		'Product/S2E Module/WIZ752SR-12x Series/WIZ752SR-125/cli_config_tool_tutorial',
 		'Product/S2E Module/WIZ752SR-12x Series/WIZ752SR-125/command_manual-[KO]',
-		//'Product/S2E Module/WIZ752SR-12x Series/WIZ752SR-125/command_manual-[EN]',
+		'Product/S2E Module/WIZ752SR-12x Series/WIZ752SR-125/command_manual-[EN]',
 		'Product/S2E Module/WIZ752SR-12x Series/WIZ752SR-125/trouble_shooting-[KO]',
 		'Product/S2E Module/WIZ752SR-12x Series/WIZ752SR-125/trouble_shooting-[EN]',
 		'Product/S2E Module/WIZ752SR-12x Series/WIZ752SR-125/datasheet',
@@ -364,7 +363,7 @@ module.exports = {
 		'Product/S2E Module/WIZ550SR/overview',
 		'Product/S2E Module/WIZ550SR/gtting_started',
 		'Product/S2E Module/WIZ550SR/users_manual_programmers_guide',
-		//'Product/S2E Module/WIZ550SR/atcommand_tutorial',
+		'Product/S2E Module/WIZ550SR/atcommand_tutorial',
 		'Product/S2E Module/WIZ550SR/datasheet_hardware_spec_characteristics',
 		'Product/S2E Module/WIZ550SR/download'
 		],
@@ -543,8 +542,8 @@ module.exports = {
 		'Product/App Module/WIZ550web/datasheet_eng',
 		'Product/App Module/WIZ550web/getting_started_guide_kor',
 		'Product/App Module/WIZ550web/getting_started_guide_eng',
-		//'Product/App Module/WIZ550web/users_guide_kor',
-		//'Product/App Module/WIZ550web/users_guide_eng',
+		'Product/App Module/WIZ550web/users_guide_kor',
+		'Product/App Module/WIZ550web/users_guide_eng',
 		'Product/App Module/WIZ550web/future_plan_kor',
 		'Product/App Module/WIZ550web/future_plan_eng',
 		'Product/App Module/WIZ550web/tutorials_kor',
@@ -614,10 +613,10 @@ module.exports = {
 		'Product/Wi-Fi Module/WizFi250/Programers Guide/overview',
 		'Product/Wi-Fi Module/WizFi250/Programers Guide/at_command_set',
 		'Product/Wi-Fi Module/WizFi250/Programers Guide/io_pin',
-		//'Product/Wi-Fi Module/WizFi250/Programers Guide/how_to_use_web_configuration',
+		'Product/Wi-Fi Module/WizFi250/Programers Guide/how_to_use_web_configuration',
 		'Product/Wi-Fi Module/WizFi250/Programers Guide/how_to_upgrade_firmware',
 		'Product/Wi-Fi Module/WizFi250/Programers Guide/examples_association_disassociation',
-		//'Product/Wi-Fi Module/WizFi250/Programers Guide/examples_data_communication',
+		'Product/Wi-Fi Module/WizFi250/Programers Guide/examples_data_communication',
 		'Product/Wi-Fi Module/WizFi250/Programers Guide/examples_wifi_direct',
 		'Product/Wi-Fi Module/WizFi250/Programers Guide/appendix',
 		]
@@ -647,13 +646,13 @@ module.exports = {
         label: 'Programers Guide',
         items: [
 		'Product/Wi-Fi Module/WizFi310/Programers Guide/overview',
-		//'Product/Wi-Fi Module/WizFi310/Programers Guide/at_commands',
+		'Product/Wi-Fi Module/WizFi310/Programers Guide/at_commands',
 		'Product/Wi-Fi Module/WizFi310/Programers Guide/firmware_upgrade_using_serial_interface',
 		'Product/Wi-Fi Module/WizFi310/Programers Guide/firmware_upgrade_using_ota',
 		'Product/Wi-Fi Module/WizFi310/Programers Guide/examples'
 		]
 		},
-		//'Product/Wi-Fi Module/WizFi310/quick_start_guide',
+		'Product/Wi-Fi Module/WizFi310/quick_start_guide',
 		'Product/Wi-Fi Module/WizFi310/wizfi310_evb_if_dimension',
 		'Product/Wi-Fi Module/WizFi310/wizfi310_evb_sch',
 		'Product/Wi-Fi Module/WizFi310/wizfi310_firmware_using_serial',
@@ -766,6 +765,8 @@ module.exports = {
 		],
     },
 	*/
+	/*
+	{
         type: 'category',
         label: 'Open Source Hardware',
         items: [
@@ -781,17 +782,17 @@ module.exports = {
 		'Product/Open Source Hardware/ioshield_l'
 		],
     },
+	*/
 	],
     Design_Guide: [
-	'Design-Guide/design_guide',
-	'Design-Guide/hardware_design_guide',
-	'Design-Guide/package_information',
-	'Design-Guide/ir_reflow_profile',
-	'Design-Guide/eagle_cad_library_of_wiznet_products'
-	]
-	,
+	'Design Guide/design_guide',
+	'Design Guide/hardware_design_guide',
+	'Design Guide/package_information',
+	'Design Guide/ir_reflow_profile',
+	'Design Guide/eagle_cad_library_of_wiznet_products'
+	],
 	VAR_Products_using_WIZnet: [
-	//'VAR Products using WIZnet/var_products_using_wiznet',
+	'VAR Products using WIZnet/var_products_using_wiznet',
 	'VAR Products using WIZnet/ethernet_shield',
 	'VAR Products using WIZnet/wi_fi_shield',
 	'VAR Products using WIZnet/third_party'
