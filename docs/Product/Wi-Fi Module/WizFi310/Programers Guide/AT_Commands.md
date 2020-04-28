@@ -216,7 +216,7 @@ In the STA mode, it leaves current Access Point, but in the SoftAP mode, it stop
     AT+WSCAN
 
   * Format:
- >
+>
  
     AT+WSCAN=<SSID>,<BSSID>,<Channel>
     
