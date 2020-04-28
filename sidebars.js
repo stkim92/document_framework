@@ -32,6 +32,7 @@ module.exports = {
 		'Product/iMCU/W7500/all_pages'
 		],
 		},
+		/*
 		{
         type: 'category',
         label: 'W7500P',
@@ -50,6 +51,7 @@ module.exports = {
 		'Product/iMCU/W7500P/all_pages'
 		],
 		},
+		*/
 		{
 			type: 'link',
 			label: 'W7100A(Link)', // string - the label that should be displayed.
