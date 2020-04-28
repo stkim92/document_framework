@@ -544,12 +544,12 @@ module.exports = {
 		}
 		],
     },
-	/*
 	{
         type: 'category',
         label: 'Wi-Fi Module',
         items: [
 		'Product/Wi-Fi Module/wi_fi_module',
+		/*
 		{
         type: 'category',
         label: 'WizFi360',
@@ -574,6 +574,8 @@ module.exports = {
 		}
 		],
 		},
+		*/
+		/*
 		{
         type: 'category',
         label: 'WizFi250',
@@ -625,6 +627,8 @@ module.exports = {
 		'Product/Wi-Fi Module/WizFi250/reference_youtube',
 		],
 		},
+		*/
+		/*
 		{
         type: 'category',
         label: 'WizFi310',
@@ -649,6 +653,7 @@ module.exports = {
 		'Product/Wi-Fi Module/WizFi310/wizfi310_firmware_using_ota'
 		],
 		},
+		*/
 		{
         type: 'category',
         label: 'WizFi630S',
@@ -669,7 +674,6 @@ module.exports = {
 		}
 		],
     },
-	*/
 	{
         type: 'category',
         label: 'Mbed WIZwiki Platform',
