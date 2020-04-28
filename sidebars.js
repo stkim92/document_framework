@@ -438,7 +438,6 @@ module.exports = {
 		],
     },
 	*/
-	/*
 	{
         type: 'category',
         label: 'ioModule',
@@ -526,8 +525,6 @@ module.exports = {
 		}
 		],
     },
-	*/
-	/*
 	{
         type: 'category',
         label: 'App Module',
@@ -553,7 +550,6 @@ module.exports = {
 		}
 		],
     },
-	*/
 	/*
 	{
         type: 'category',
@@ -765,7 +761,6 @@ module.exports = {
 		],
     },
 	*/
-	/*
 	{
         type: 'category',
         label: 'Open Source Hardware',
@@ -782,7 +777,6 @@ module.exports = {
 		'Product/Open Source Hardware/ioshield_l'
 		],
     },
-	*/
 	],
     Design_Guide: [
 	'Design Guide/design_guide',
