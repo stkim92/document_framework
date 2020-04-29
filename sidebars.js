@@ -8,7 +8,6 @@
 module.exports = {
   someSidebar: {
 	'WIZnet Document Wiki': ['introduction'],
-	/*
     Products: [
 	'Product/products',
 	{
@@ -778,8 +777,6 @@ module.exports = {
 		],
     },
 	],
-	*/
-	/*
     Design_Guide: [
 	'Design Guide/design_guide',
 	'Design Guide/hardware_design_guide',
@@ -787,7 +784,6 @@ module.exports = {
 	'Design Guide/ir_reflow_profile',
 	'Design Guide/eagle_cad_library_of_wiznet_products'
 	],
-	*/
 	VAR_Products_using_WIZnet: [
 	//'VAR Products using WIZnet/var_products_using_wiznet',
 	'VAR Products using WIZnet/ethernet_shield',
