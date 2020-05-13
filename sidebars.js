@@ -712,6 +712,7 @@ module.exports = {
         label: 'Mbed WIZwiki Platform',
         items: [
 		'Product/Mbed-WIZwiki-Platform/mbed_wizwiki_platform',
+		/*
 		{
         type: 'category',
         label: 'WIZwiki-W7500',
@@ -727,6 +728,8 @@ module.exports = {
 		'Product/Mbed-WIZwiki-Platform/WIZwiki-W7500/where_to_buy'
 		],
 		},
+		*/
+		/*
 		{
         type: 'category',
         label: 'WIZwiki-W7500P',
@@ -742,6 +745,8 @@ module.exports = {
 		'Product/Mbed-WIZwiki-Platform/WIZwiki-W7500P/where_to_buy'
 		],
 		},
+		*/
+		/*
 		{
         type: 'category',
         label: 'WIZwiki-W7500ECO',
@@ -757,7 +762,7 @@ module.exports = {
 		'Product/Mbed-WIZwiki-Platform/WIZwiki-W7500ECO/where_to_buy'
 		],
 		},
-		/*
+		*/
 		{
         type: 'category',
         label: 'WIZwiki-W7500 Mbed Starter Kit',
@@ -789,7 +794,6 @@ module.exports = {
 		'Product/Mbed-WIZwiki-Platform/WIZwiki-W7500-Mbed-Starter-Kit/network_exercise_2_led_with_tcp_eng'
 		],
 		}
-		*/
 		],
     },
 	{
