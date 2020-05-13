@@ -1,9 +1,15 @@
 module.exports = {
   title: 'My Site',
   tagline: 'The tagline of my site',
+<<<<<<< HEAD
   url: 'https://Stkim92.github.io',
   baseUrl: '/document_framework/',
   //baseUrl: '/',
+=======
+  url: 'https://wiznet.github.io',
+  //url: 'https://doc.wiznet-cloud.com',
+  baseUrl: '/document_framework/',
+>>>>>>> upstream/master
   favicon: 'img/favicon.ico',
   organizationName: 'Stkim92', // Usually your GitHub org/user name.
   projectName: 'document_framework', // Usually your repo name.
@@ -15,7 +21,7 @@ module.exports = {
         src: 'img/wiznet-logo.svg',
       },
       links: [
-        {to: 'docs/introduction', label: 'Docs', position: 'left'},
+        {to: 'docs/introduction', label: 'Documentation', position: 'left'},
         {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
