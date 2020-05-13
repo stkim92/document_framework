@@ -712,7 +712,6 @@ module.exports = {
         label: 'Mbed WIZwiki Platform',
         items: [
 		'Product/Mbed-WIZwiki-Platform/mbed_wizwiki_platform',
-		/*
 		{
         type: 'category',
         label: 'WIZwiki-W7500',
@@ -722,13 +721,12 @@ module.exports = {
 		'Product/Mbed-WIZwiki-Platform/WIZwiki-W7500/firmware',
 		'Product/Mbed-WIZwiki-Platform/WIZwiki-W7500/getting_started',
 		'Product/Mbed-WIZwiki-Platform/WIZwiki-W7500/make_new_wizwiki_w7500_projects',
-		'Product/Mbed-WIZwiki-Platform/WIZwiki-W7500/technical_reference',
-		'Product/Mbed-WIZwiki-Platform/WIZwiki-W7500/etc',
-		'Product/Mbed-WIZwiki-Platform/WIZwiki-W7500/see_also',
-		'Product/Mbed-WIZwiki-Platform/WIZwiki-W7500/where_to_buy'
+		//'Product/Mbed-WIZwiki-Platform/WIZwiki-W7500/technical_reference',
+		//'Product/Mbed-WIZwiki-Platform/WIZwiki-W7500/etc',
+		//'Product/Mbed-WIZwiki-Platform/WIZwiki-W7500/see_also',
+		//'Product/Mbed-WIZwiki-Platform/WIZwiki-W7500/where_to_buy'
 		],
 		},
-		*/
 		/*
 		{
         type: 'category',
