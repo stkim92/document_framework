@@ -59,6 +59,7 @@ module.exports = {
 		],
     },
 	*/
+	/*
 	{
         type: 'category',
         label: 'Pre-programmed MCU',
@@ -74,6 +75,8 @@ module.exports = {
 		}
 		],
     },
+	*/
+	/*
 	{
         type: 'category',
         label: 'iEthernet',
@@ -167,6 +170,8 @@ module.exports = {
 		}
 		],
     },
+	*/
+	/*
 	{
         type: 'category',
         label: 'S2E Module',
@@ -473,6 +478,7 @@ module.exports = {
 		}
 		],
     },
+	*/
 	{
         type: 'category',
         label: 'ioModule',
@@ -585,6 +591,7 @@ module.exports = {
 		}
 		],
     },
+	/*
 	{
         type: 'category',
         label: 'Wi-Fi Module',
@@ -709,6 +716,7 @@ module.exports = {
 		}
 		],
     },
+	*/
 	{
         type: 'category',
         label: 'Mbed WIZwiki Platform',
