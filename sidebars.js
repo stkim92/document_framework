@@ -707,7 +707,6 @@ module.exports = {
 		}
 		],
     },
-	/*
 	{
         type: 'category',
         label: 'Mbed WIZwiki Platform',
@@ -758,6 +757,7 @@ module.exports = {
 		'Product/Mbed-WIZwiki-Platform/WIZwiki-W7500ECO/where_to_buy'
 		],
 		},
+		/*
 		{
         type: 'category',
         label: 'WIZwiki-W7500 Mbed Starter Kit',
@@ -789,9 +789,9 @@ module.exports = {
 		'Product/Mbed-WIZwiki-Platform/WIZwiki-W7500-Mbed-Starter-Kit/network_exercise_2_led_with_tcp_eng'
 		],
 		}
+		*/
 		],
     },
-	*/
 	{
         type: 'category',
         label: 'Open Source Hardware',
