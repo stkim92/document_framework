@@ -2,6 +2,7 @@ module.exports = {
   title: 'My Site',
   tagline: 'The tagline of my site',
 <<<<<<< HEAD
+<<<<<<< HEAD
   url: 'https://Stkim92.github.io',
   baseUrl: '/document_framework/',
   //baseUrl: '/',
@@ -10,6 +11,12 @@ module.exports = {
   //url: 'https://doc.wiznet-cloud.com',
   baseUrl: '/document_framework/',
 >>>>>>> upstream/master
+=======
+  //url: 'https://Stkim92.github.io',
+  url: 'https://doc.wiznet-cloud.com',
+  //baseUrl: '/document_framework/',
+  baseUrl: '/',
+>>>>>>> 8a74c83499c7b2218e8b6e88fdc98f8c2f5772a0
   favicon: 'img/favicon.ico',
   organizationName: 'Stkim92', // Usually your GitHub org/user name.
   projectName: 'document_framework', // Usually your repo name.
