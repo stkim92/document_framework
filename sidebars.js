@@ -717,6 +717,7 @@ module.exports = {
 		],
     },
 	*/
+	/*
 	{
         type: 'category',
         label: 'Mbed WIZwiki Platform',
@@ -800,6 +801,8 @@ module.exports = {
 		}
 		],
     },
+	*/
+	/*
 	{
         type: 'category',
         label: 'Open Source Hardware',
@@ -816,6 +819,7 @@ module.exports = {
 		'Product/Open-Source-Hardware/ioshield_l'
 		],
     },
+	*/
 	],
     Design_Guide: [
 	'Design-Guide/design_guide',
