@@ -10,7 +10,6 @@ module.exports = {
 	'WIZnet Document Wiki': ['introduction'],
     Products: [
 	'Product/products',
-	/*
 	{
         type: 'category',
         label: 'iMCU',
@@ -58,7 +57,6 @@ module.exports = {
 		}
 		],
     },
-	*/
 	/*
 	{
         type: 'category',
@@ -76,7 +74,6 @@ module.exports = {
 		],
     },
 	*/
-	/*
 	{
         type: 'category',
         label: 'iEthernet',
@@ -170,8 +167,6 @@ module.exports = {
 		}
 		],
     },
-	*/
-	/*
 	{
         type: 'category',
         label: 'S2E Module',
@@ -478,7 +473,6 @@ module.exports = {
 		}
 		],
     },
-	*/
 	{
         type: 'category',
         label: 'ioModule',
