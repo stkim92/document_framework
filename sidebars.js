@@ -707,6 +707,7 @@ module.exports = {
 		}
 		],
     },
+	/*
 	{
         type: 'category',
         label: 'Mbed WIZwiki Platform',
