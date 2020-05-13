@@ -10,6 +10,7 @@ module.exports = {
 	'WIZnet Document Wiki': ['introduction'],
     Products: [
 	'Product/products',
+	/*
 	{
         type: 'category',
         label: 'iMCU',
@@ -57,6 +58,7 @@ module.exports = {
 		}
 		],
     },
+	*/
 	{
         type: 'category',
         label: 'Pre-programmed MCU',
