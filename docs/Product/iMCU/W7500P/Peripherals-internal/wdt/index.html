@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="generator" content="Docusaurus v2.0.0-alpha.54">
+
+
+<title data-react-helmet="true">wdt | My Site</title>
+
+<meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="wdt | My Site"><meta data-react-helmet="true" name="description" content="# Watchdog Timer(WDT)"><meta data-react-helmet="true" property="og:description" content="# Watchdog Timer(WDT)"><meta data-react-helmet="true" property="og:url" content="https://Stkim92.github.io/document_framework/docs/Product/iMCU/W7500P/Peripherals-internal/wdt">
+
+<link data-react-helmet="true" rel="shortcut icon" href="/document_framework/img/favicon.ico">
+
+
+<link rel="stylesheet" href="/document_framework/styles.7bf677ae.css">
+
+
+<link rel="preload" href="/document_framework/styles.6a483085.js" as="script">
+
+<link rel="preload" href="/document_framework/runtime~main.c0129915.js" as="script">
+
+<link rel="preload" href="/document_framework/main.b67039db.js" as="script">
+
+<link rel="preload" href="/document_framework/1.acf01d8a.js" as="script">
+
+<link rel="preload" href="/document_framework/2.d35ad343.js" as="script">
+
+<link rel="preload" href="/document_framework/3.6a80a606.js" as="script">
+
+<link rel="preload" href="/document_framework/1be78505.fd034ede.js" as="script">
+
+<link rel="preload" href="/document_framework/dc0844a7.9fdde9b4.js" as="script">
+
+<link rel="preload" href="/document_framework/17896441.f946350e.js" as="script">
+
+<link rel="preload" href="/document_framework/4cc526de.67b4c080.js" as="script">
+
+</head>
+<body>
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=window.matchMedia("(prefers-color-scheme: dark)"),n=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();null!==n?t(n):e.matches&&t("dark")}()</script>
+<div id="__docusaurus">
+<nav class="navbar navbar--light navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><div aria-label="Navigation bar toggle" class="navbar__toggle" role="button" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></div><a class="navbar__brand" href="/document_framework/"><img class="navbar__logo" src="/document_framework/img/wiznet-logo.svg" alt="My Site Logo"><strong class="navbar__title"></strong></a><a class="navbar__item navbar__link" href="/document_framework/docs/introduction">Documentation</a><a class="navbar__item navbar__link" href="/document_framework/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/docusaurus" class="navbar__item navbar__link">GitHub</a><div class="react-toggle react-toggle--disabled displayOnlyInLargeViewport_1gtM"><div class="react-toggle-track"><div class="react-toggle-track-check"><span class="toggle_keGJ moon_1gwN"></span></div><div class="react-toggle-track-x"><span class="toggle_keGJ sun_3CPA"></span></div></div><div class="react-toggle-thumb"></div><input type="checkbox" disabled="" aria-label="Dark mode toggle" class="react-toggle-screenreader-only"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div><div class="navbar-sidebar"><div class="navbar-sidebar__brand"><a class="navbar__brand" href="/document_framework/"><img class="navbar__logo" src="/document_framework/img/wiznet-logo.svg" alt="My Site Logo"><strong class="navbar__title"></strong></a></div><div class="navbar-sidebar__items"><div class="menu"><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" position="left" href="/document_framework/docs/introduction">Documentation</a></li><li class="menu__list-item"><a class="menu__link" position="left" href="/document_framework/blog">Blog</a></li><li class="menu__list-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/docusaurus" class="menu__link" position="right">GitHub</a></li></ul></div></div></div></nav><div class="main-wrapper"><div class="docPage_1kjD"><main class="docMainContainer_FFX1"><div class="container padding-vert--lg docItemWrapper_1cc7"><div class="row"><div class="col docItemCol_2GOA"><div class="docItemContainer_2cwg"><article><header><h1 class="docTitle_1vWb">wdt</h1></header><div class="markdown"><h1><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="watchdog-timerwdt"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#watchdog-timerwdt" title="Direct link to heading">#</a>Watchdog Timer(WDT)</h1><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="introduction"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#introduction" title="Direct link to heading">#</a>Introduction</h2><p>The watchdog is based on a 32-bit down-counter that is initialized from the Reload Register, WDTLoad. The watchdog generates a regular interrupt depending on a programmed value. The counter decreases by one on each positive clock edge of watchdog clock.</p><p>The watchdog monitors the interrupt and asserts a reset request signal when the counter reaches 0 and the counter is stopped. On the next enabled watchdog clock edge, the counter is reloaded from the WDTLoad Register and the countdown sequence continues. The watchdog reasserts the reset signal if the interrupt is not cleared by the time the counter next reaches 0.</p><p>The watchdog applies a reset to a system in the event of a software failure to provide a way to recover from software crashes. Users can enable or disable the watchdog unit as required.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="features"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#features" title="Direct link to heading">#</a>Features</h2><ul><li>32-bit down counter.</li><li>Internally resets chip if not periodically reloaded.</li><li>The watchdog timer has lock register for to prevent rogue software from disabling the watchdog timer functionality.</li><li>The watchdog timer clock(WDTCLK) and system clock(PCLK) are synchronous.</li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="functional-description"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#functional-description" title="Direct link to heading">#</a>Functional description</h2><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="clock"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#clock" title="Direct link to heading">#</a>Clock</h3><p>The watchdog timer contains PCLK and WDTCLK clock inputs.
+PCLK is the main APB system clock and is used by the register interface.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="interrupt-and-reset-request"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#interrupt-and-reset-request" title="Direct link to heading">#</a>Interrupt and reset request</h3><p>An interrupt is generated when the counter reaches 0 and is only cleared when the interrupt clear register is accessed.
+The register holds the value until the interrupt is cleared.</p><p>Reset request is asserted when the counter reaches 0 repeatedly and is not reprogrammed.
+Users can mask interrupts by writing 0 to the Interrupt Enable bit in the control register. Users can read the following from status registers:</p><ul><li>Raw interrupt status, before masking.</li><li>Final interrupt status, after masking.</li></ul><p>The below Figure shows Watchdog timer operation flow diagram</p><p><img src="/document_framework/img/products/w7500p/peripheral/watchdog_timer_operation_flow_diagram.jpg" title="Figure 1 Watchdog timer operation flow diagram"></p><hr><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="peripheral_examples"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#peripheral_examples" title="Direct link to heading">#</a>Peripheral_Examples</h2><ul><li><a href="/document_framework/docs/Product/iMCU/W7500P/Peripherals-internal/wdtreset">WDTReset example</a></li></ul></div></article><div class="margin-vert--xl"><div class="row"><div class="col"><a href="https://github.com/facebook/docusaurus/edit/master/website/docs/Product/iMCU/W7500P/Peripherals-internal/wdt.md" target="_blank" rel="noreferrer noopener"><svg fill="currentColor" height="1.2em" width="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 40 40" style="margin-right:0.3em;vertical-align:sub"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div></div></div><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#introduction" class="contents__link">Introduction</a></li><li><a href="#features" class="contents__link">Features</a></li><li><a href="#functional-description" class="contents__link">Functional description</a><ul><li><a href="#clock" class="contents__link">Clock</a></li><li><a href="#interrupt-and-reset-request" class="contents__link">Interrupt and reset request</a></li></ul></li><li><a href="#peripheral_examples" class="contents__link">Peripheral_Examples</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Docs</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/document_framework/docs/doc1">Style Guide</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Community</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/questions/tagged/docusaurus">Stack Overflow</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://discordapp.com/invite/docusaurus">Discord</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Social</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/document_framework/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/docusaurus">GitHub</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://twitter.com/docusaurus">Twitter</a></li></ul></div></div><div class="text--center"><div>Copyright © 2020 My Project, Inc. Built with Docusaurus.</div></div></div></footer>
+</div>
+
+<script src="/document_framework/styles.6a483085.js"></script>
+
+<script src="/document_framework/runtime~main.c0129915.js"></script>
+
+<script src="/document_framework/main.b67039db.js"></script>
+
+<script src="/document_framework/1.acf01d8a.js"></script>
+
+<script src="/document_framework/2.d35ad343.js"></script>
+
+<script src="/document_framework/3.6a80a606.js"></script>
+
+<script src="/document_framework/1be78505.fd034ede.js"></script>
+
+<script src="/document_framework/dc0844a7.9fdde9b4.js"></script>
+
+<script src="/document_framework/17896441.f946350e.js"></script>
+
+<script src="/document_framework/4cc526de.67b4c080.js"></script>
+
+
+</body>
+</html>
