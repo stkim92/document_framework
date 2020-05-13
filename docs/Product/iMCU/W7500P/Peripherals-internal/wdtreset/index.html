@@ -8,33 +8,33 @@
 
 <title data-react-helmet="true">wdtreset | My Site</title>
 
-<meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="wdtreset | My Site"><meta data-react-helmet="true" name="description" content="# WDTReset example"><meta data-react-helmet="true" property="og:description" content="# WDTReset example"><meta data-react-helmet="true" property="og:url" content="https://Stkim92.github.io/document_framework/docs/Product/iMCU/W7500P/Peripherals-internal/wdtreset">
+<meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="wdtreset | My Site"><meta data-react-helmet="true" name="description" content="# WDTReset example"><meta data-react-helmet="true" property="og:description" content="# WDTReset example"><meta data-react-helmet="true" property="og:url" content="https://Stkim92.github.io/document_framework/docs/Product/iMCU/W7500P/Peripherals-internal/wdtreset">
 
 <link data-react-helmet="true" rel="shortcut icon" href="/document_framework/img/favicon.ico">
 
 
-<link rel="stylesheet" href="/document_framework/styles.7bf677ae.css">
+<link rel="stylesheet" href="/document_framework/styles.18eb9401.css">
 
 
-<link rel="preload" href="/document_framework/styles.e80694a0.js" as="script">
+<link rel="preload" href="/document_framework/styles.7e952af9.js" as="script">
 
-<link rel="preload" href="/document_framework/runtime~main.aaab620c.js" as="script">
+<link rel="preload" href="/document_framework/runtime~main.867c96b2.js" as="script">
 
-<link rel="preload" href="/document_framework/main.f4aff8e6.js" as="script">
+<link rel="preload" href="/document_framework/main.73c3d94a.js" as="script">
 
 <link rel="preload" href="/document_framework/1.e69d4637.js" as="script">
 
-<link rel="preload" href="/document_framework/2.710bb034.js" as="script">
+<link rel="preload" href="/document_framework/2.75f9f15e.js" as="script">
 
-<link rel="preload" href="/document_framework/3.8eaf642e.js" as="script">
+<link rel="preload" href="/document_framework/3.27110571.js" as="script">
 
-<link rel="preload" href="/document_framework/1be78505.bbc95c14.js" as="script">
+<link rel="preload" href="/document_framework/1be78505.8474aecd.js" as="script">
 
-<link rel="preload" href="/document_framework/dc0844a7.77d38209.js" as="script">
+<link rel="preload" href="/document_framework/dc0844a7.a0d5408d.js" as="script">
 
-<link rel="preload" href="/document_framework/17896441.4c8df0f8.js" as="script">
+<link rel="preload" href="/document_framework/17896441.3e5859ab.js" as="script">
 
-<link rel="preload" href="/document_framework/fc771aec.7d2fda2b.js" as="script">
+<link rel="preload" href="/document_framework/0b55ecec.cac4281e.js" as="script">
 
 </head>
 <body>
@@ -48,25 +48,25 @@ FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE
 CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</p><hr><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="example-description"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#example-description" title="Direct link to heading">#</a>Example Description</h3><p>This example shows how to use the Watchdog timer peripheral to run and generate watchdog reset request signal. External interrupt is used for generating hardfault and watchdog timer reset. EXTI line is mapped to PA_00</p><p>The Watchdog timer frequency is set to SystemCoreClock(Hz). SystemCoreClock is set to 20 MHz.</p><p>Reset information is checked at first, and then if reset is not occurred by watchdog timer, watchdog timer is set and started. Untill external interrupt is occurred, WDT counter is set and RED LED(PC_08) is toggled when WDT counter is under 0x1000.</p><p>If reset is occurred by watchdog timer, WDT interrupt is cleared and RED LED(PC_08) is off and GREEN LED(PC_09) is on.</p><hr><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="directory-contents"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#directory-contents" title="Direct link to heading">#</a>Directory contents</h3><ul><li>WDT/WDTReset/main.c                  (Main program) </li><li>WDT/WDTReset/W7500x_it.c             (Interrupt Handlers)</li><li>WDT/WDTReset/W7500x_it.h             (Interrupt Handlers Header file)</li><li>WDT/WDTReset/W7500x_conf.h           (Library Configuration file)</li><li>WDT/WDTReset/MDK/W7500x_WDT_WDTReset.uvproj     (MDK Project file)</li><li>WDT/WDTReset/GCC/Makefile            (GCC Make file)</li></ul><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="hardware-and-software-environment"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#hardware-and-software-environment" title="Direct link to heading">#</a>Hardware and Software environment</h3><ul><li>This example has been tested with WIZnet WIZwiki W7500 platform.</li><li>To select the WIZnet WIZwiki platform used to run the example.  </li><li>WIZwiki W7500 Set-up<ul><li>Use RED LED connected to PC_08 pin.</li><li>Use GREEN LED connected to PC_09 pin.</li><li>Use EXTI connected to PA_00 pin.</li><li>In order to use the RED LED(PC_08) to be changed from PAD_AF0 to PAD_AF1.</li><li>In order to use the GREEN LED(PC_08) to be changed from PAD_AF0 to PAD_AF1.</li><li>External input button has to be configured separately.  </li></ul></li></ul><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="how-to-use-it-"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#how-to-use-it-" title="Direct link to heading">#</a>How to use it ?</h3><p>In order to make the program work, you must do the following :</p><ul><li><p>Open your preferred toolchain.</p></li><li><p>Rebuild all files and load your image into target memory.</p></li><li><p>Run the example.</p></li><li><p>WIZwiki W7500 where the Flash memory density ranges 128Kbytes.</p></li><li><p>If you have any questions, please use the forum site.</p><ul><li>&quot;<a href="http://wizwiki.net/forum/%22">http://wizwiki.net/forum/&quot;</a></li></ul><p>© COPYRIGHT 2015 WIZnet Co.,Ltd. </p></li></ul></div></article><div class="margin-vert--xl"><div class="row"><div class="col"><a href="https://github.com/facebook/docusaurus/edit/master/website/docs/Product/iMCU/W7500P/Peripherals-internal/wdtreset.md" target="_blank" rel="noreferrer noopener"><svg fill="currentColor" height="1.2em" width="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 40 40" style="margin-right:0.3em;vertical-align:sub"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div></div></div><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#example-description" class="contents__link">Example Description</a></li><li><a href="#directory-contents" class="contents__link">Directory contents</a></li><li><a href="#hardware-and-software-environment" class="contents__link">Hardware and Software environment</a></li><li><a href="#how-to-use-it-" class="contents__link">How to use it ?</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Docs</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/document_framework/docs/doc1">Style Guide</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Community</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/questions/tagged/docusaurus">Stack Overflow</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://discordapp.com/invite/docusaurus">Discord</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Social</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/document_framework/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/docusaurus">GitHub</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://twitter.com/docusaurus">Twitter</a></li></ul></div></div><div class="text--center"><div>Copyright © 2020 My Project, Inc. Built with Docusaurus.</div></div></div></footer>
 </div>
 
-<script src="/document_framework/styles.e80694a0.js"></script>
+<script src="/document_framework/styles.7e952af9.js"></script>
 
-<script src="/document_framework/runtime~main.aaab620c.js"></script>
+<script src="/document_framework/runtime~main.867c96b2.js"></script>
 
-<script src="/document_framework/main.f4aff8e6.js"></script>
+<script src="/document_framework/main.73c3d94a.js"></script>
 
 <script src="/document_framework/1.e69d4637.js"></script>
 
-<script src="/document_framework/2.710bb034.js"></script>
+<script src="/document_framework/2.75f9f15e.js"></script>
 
-<script src="/document_framework/3.8eaf642e.js"></script>
+<script src="/document_framework/3.27110571.js"></script>
 
-<script src="/document_framework/1be78505.bbc95c14.js"></script>
+<script src="/document_framework/1be78505.8474aecd.js"></script>
 
-<script src="/document_framework/dc0844a7.77d38209.js"></script>
+<script src="/document_framework/dc0844a7.a0d5408d.js"></script>
 
-<script src="/document_framework/17896441.4c8df0f8.js"></script>
+<script src="/document_framework/17896441.3e5859ab.js"></script>
 
-<script src="/document_framework/fc771aec.7d2fda2b.js"></script>
+<script src="/document_framework/0b55ecec.cac4281e.js"></script>
 
 
 </body>
