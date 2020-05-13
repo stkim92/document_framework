@@ -5,8 +5,6 @@ date: 2020-04-07
 ---
 
 
-## Content
-
 # W5500 TCP Function
 
 By setting some register and memory operation, W5500 provides internet
@@ -14,9 +12,9 @@ connectivity. This chapter describes how it can be operated.
 
 ## Initialization
 
-\<WRAP round center tip 80% centeralign\> You **must check PHY LINK**
+ You **must check PHY LINK**
 *(0 bit of PHYCFGR)* **before attempting to make a network connection**
-using sockets. \</WRAP\>
+using sockets. 
 
 ### Basic Setting
 
@@ -43,8 +41,8 @@ basic network information.
         address allocation. The manufacturer which produces the network
         device allocates the MAC address to product.
       - Details on MAC address allocation refer to the website as below.
-      - <http://www.ieee.org/>
-      - <http://standards.ieee.org/regauth/oui/index.shtml>
+      - 🌎http://www.ieee.org/
+      - 🌎http://standards.ieee.org/regauth/oui/index.shtml
 2.  GAR(Gateway Address Register)
 3.  SUBR(Subnet Mask Register)
 4.  SIPR(Source IP Address Register)
@@ -54,7 +52,7 @@ basic network information.
 This stage sets the socket tx/rx memory information. The base address
 and mask address of each socket are fixed and saved in this stage.
 
-<B>*In case of, assign 2KB rx, tx memroy per SOCKET*</B>
+***In case of, assign 2KB rx, tx memroy per SOCKET***
 
 ``` c
 In case of, assign 2KB rx, tx memory per SOCKET
@@ -90,12 +88,12 @@ connect-request first to “TCP SERVER” to make the connection
 (Active-open).
 
 ![TCP SERVER and TCP
-CLIENT](/products/w5500/application/serverclient.jpg)
+CLIENT](/document_framework/img/products/w5500/application/serverclient.jpg)
 
 ### TCP SERVER
 
 ![TCP SERVER Operation
-Flow](/products/w5500/application/server_flow.jpg)
+Flow](/document_framework/img/products/w5500/application/server_flow.jpg)
 
 ##### SOCKET Initialization
 
@@ -121,11 +119,11 @@ if (Sn_SR != SOCK_INIT) Sn_CR = CLOSE; goto START;
 }
 ```
 
-\<WRAP round center tip 80% centeralign\> After W5500 **accepts the
+ After W5500 **accepts the
 command, the Sn\_CR register is automatically cleared to 0x00**. Even
 though Sn\_CR is cleared to 0x00, the command is still being processed.
 *To check whether the command is completed or not, please check the
-Sn\_IR or Sn\_SR.* \</WRAP\>
+Sn\_IR or Sn\_SR.*\</WRAP\>
 
 ##### LISTEN
 
@@ -371,7 +369,7 @@ It is same as TCP server except ‘CONNECT’ state. User can refer to the
 above "TCP SERVER” section.
 
 ![TCP CLIENT Operation
-Flow](/products/w5500/application/client_flow.jpg)
+Flow](/document_framework/img/products/w5500/application/client_flow.jpg)
 
 ##### CONNECT
 
