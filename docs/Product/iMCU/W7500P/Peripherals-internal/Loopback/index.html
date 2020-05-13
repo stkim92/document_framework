@@ -8,33 +8,33 @@
 
 <title data-react-helmet="true">Loopback | My Site</title>
 
-<meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="Loopback | My Site"><meta data-react-helmet="true" name="description" content="# SSP Loopback example"><meta data-react-helmet="true" property="og:description" content="# SSP Loopback example"><meta data-react-helmet="true" property="og:url" content="https://Stkim92.github.io/document_framework/docs/Product/iMCU/W7500P/Peripherals-internal/Loopback">
+<meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="Loopback | My Site"><meta data-react-helmet="true" name="description" content="# SSP Loopback example"><meta data-react-helmet="true" property="og:description" content="# SSP Loopback example"><meta data-react-helmet="true" property="og:url" content="https://Stkim92.github.io/document_framework/docs/Product/iMCU/W7500P/Peripherals-internal/Loopback">
 
 <link data-react-helmet="true" rel="shortcut icon" href="/document_framework/img/favicon.ico">
 
 
-<link rel="stylesheet" href="/document_framework/styles.18eb9401.css">
+<link rel="stylesheet" href="/document_framework/styles.7bf677ae.css">
 
 
-<link rel="preload" href="/document_framework/styles.7e952af9.js" as="script">
+<link rel="preload" href="/document_framework/styles.95763884.js" as="script">
 
-<link rel="preload" href="/document_framework/runtime~main.867c96b2.js" as="script">
+<link rel="preload" href="/document_framework/runtime~main.20307f8f.js" as="script">
 
-<link rel="preload" href="/document_framework/main.73c3d94a.js" as="script">
+<link rel="preload" href="/document_framework/main.00eb5f6d.js" as="script">
 
-<link rel="preload" href="/document_framework/1.e69d4637.js" as="script">
+<link rel="preload" href="/document_framework/1.c6713b66.js" as="script">
 
-<link rel="preload" href="/document_framework/2.75f9f15e.js" as="script">
+<link rel="preload" href="/document_framework/2.a8d07701.js" as="script">
 
-<link rel="preload" href="/document_framework/3.27110571.js" as="script">
+<link rel="preload" href="/document_framework/3.50a9e84a.js" as="script">
 
-<link rel="preload" href="/document_framework/1be78505.8474aecd.js" as="script">
+<link rel="preload" href="/document_framework/1be78505.74d7bc80.js" as="script">
 
-<link rel="preload" href="/document_framework/dc0844a7.a0d5408d.js" as="script">
+<link rel="preload" href="/document_framework/dc0844a7.fe33d536.js" as="script">
 
-<link rel="preload" href="/document_framework/17896441.3e5859ab.js" as="script">
+<link rel="preload" href="/document_framework/17896441.f7609786.js" as="script">
 
-<link rel="preload" href="/document_framework/24b6da9a.96d6f980.js" as="script">
+<link rel="preload" href="/document_framework/479677ff.35d95052.js" as="script">
 
 </head>
 <body>
@@ -44,25 +44,25 @@
 After check of TransferStatus, if Status is PASSED LED ON GREEN and if Status is FAILED LED ON RED.</p><hr><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="directory-contents"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#directory-contents" title="Direct link to heading">#</a>Directory contents</h3><ul><li>SSP/Loopback/main.c                                   (Main program)</li><li>SSP/Loopback/W7500x_it.c                              (Interrupt Handlers)</li><li>SSP/Loopback/W7500x_it.h                              (Interrupt Handlers Header file)</li><li>SSP/Loopback/W7500x_conf.h                            (Library Configuration file)</li><li>SSP/Loopback/MDK/W7500x_SSP_Loopback.uvproj           (MDK Project file)</li><li>SSP/Loopback/GCC/Makefile                             (GCC Make file)</li></ul><hr><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="hardware-and-software-environment"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#hardware-and-software-environment" title="Direct link to heading">#</a>Hardware and Software environment</h3><ul><li><p>This example has been tested with WIZnet WIZwiki W7500 platform.</p></li><li><p>To select the WIZnet WIZwiki platform used to run the example.</p></li><li><p>WIZwiki W7500 Set-up</p><ul><li>Set SSP0 is master and datasize is 16bits</li><li>Set SSP1 is Slave and datasize is 16bits</li><li>Connect SSP0 SSEL (PA.05) pin to SSP1 SSEL (PB.00) Pin</li><li>Connect SSP0 SCLK (PA.06) pin to SSP1 SCLK (PB.01) Pin</li><li>Connect SSP0 MISO (PA.07) pin to SSP1 MISO (PB.02) Pin</li><li>Connect SSP0 MOSI (PA.08) pin to SSP1 MOSI (PB.03) Pin</li><li>Use LED(R) connected to PC_08 pin.</li><li>Use LED(G) connected to PC_09 pin.</li><li>In order to use the LED to be changed from PAD_AF0 to PAD_AF1.</li></ul></li></ul><hr><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="how-to-use-it-"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#how-to-use-it-" title="Direct link to heading">#</a>How to use it ?</h3><p>In order to make the program work, you must do the following :</p><ul><li>Open your preferred toolchain.</li><li>Rebuild all files and load your image into target memory.</li><li>Run the example.</li><li>WIZwiki W7500 where the Flash memory density ranges 128Kbytes.</li><li>If you have any questions, please use the forum site.<ul><li>&quot;<a href="http://wizwiki.net/forum/%22">http://wizwiki.net/forum/&quot;</a></li></ul></li></ul><p>© COPYRIGHT 2015 WIZnet Co.,Ltd.&gt;</p></div></article><div class="margin-vert--xl"><div class="row"><div class="col"><a href="https://github.com/facebook/docusaurus/edit/master/website/docs/Product/iMCU/W7500P/Peripherals-internal/Loopback.md" target="_blank" rel="noreferrer noopener"><svg fill="currentColor" height="1.2em" width="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 40 40" style="margin-right:0.3em;vertical-align:sub"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div></div></div><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#example-description" class="contents__link">Example Description</a></li><li><a href="#directory-contents" class="contents__link">Directory contents</a></li><li><a href="#hardware-and-software-environment" class="contents__link">Hardware and Software environment</a></li><li><a href="#how-to-use-it-" class="contents__link">How to use it ?</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Docs</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/document_framework/docs/doc1">Style Guide</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Community</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/questions/tagged/docusaurus">Stack Overflow</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://discordapp.com/invite/docusaurus">Discord</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Social</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/document_framework/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/docusaurus">GitHub</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://twitter.com/docusaurus">Twitter</a></li></ul></div></div><div class="text--center"><div>Copyright © 2020 My Project, Inc. Built with Docusaurus.</div></div></div></footer>
 </div>
 
-<script src="/document_framework/styles.7e952af9.js"></script>
+<script src="/document_framework/styles.95763884.js"></script>
 
-<script src="/document_framework/runtime~main.867c96b2.js"></script>
+<script src="/document_framework/runtime~main.20307f8f.js"></script>
 
-<script src="/document_framework/main.73c3d94a.js"></script>
+<script src="/document_framework/main.00eb5f6d.js"></script>
 
-<script src="/document_framework/1.e69d4637.js"></script>
+<script src="/document_framework/1.c6713b66.js"></script>
 
-<script src="/document_framework/2.75f9f15e.js"></script>
+<script src="/document_framework/2.a8d07701.js"></script>
 
-<script src="/document_framework/3.27110571.js"></script>
+<script src="/document_framework/3.50a9e84a.js"></script>
 
-<script src="/document_framework/1be78505.8474aecd.js"></script>
+<script src="/document_framework/1be78505.74d7bc80.js"></script>
 
-<script src="/document_framework/dc0844a7.a0d5408d.js"></script>
+<script src="/document_framework/dc0844a7.fe33d536.js"></script>
 
-<script src="/document_framework/17896441.3e5859ab.js"></script>
+<script src="/document_framework/17896441.f7609786.js"></script>
 
-<script src="/document_framework/24b6da9a.96d6f980.js"></script>
+<script src="/document_framework/479677ff.35d95052.js"></script>
 
 
 </body>
