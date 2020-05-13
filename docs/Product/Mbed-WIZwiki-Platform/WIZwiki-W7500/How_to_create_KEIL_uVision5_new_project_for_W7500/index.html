@@ -8,33 +8,33 @@
 
 <title data-react-helmet="true">How_to_create_KEIL_uVision5_new_project_for_W7500 | My Site</title>
 
-<meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="How_to_create_KEIL_uVision5_new_project_for_W7500 | My Site"><meta data-react-helmet="true" name="description" content="# How to make W7500 Keil Project"><meta data-react-helmet="true" property="og:description" content="# How to make W7500 Keil Project"><meta data-react-helmet="true" property="og:url" content="https://Stkim92.github.io/document_framework/docs/Product/Mbed-WIZwiki-Platform/WIZwiki-W7500/How_to_create_KEIL_uVision5_new_project_for_W7500">
+<meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="How_to_create_KEIL_uVision5_new_project_for_W7500 | My Site"><meta data-react-helmet="true" name="description" content="# How to make W7500 Keil Project"><meta data-react-helmet="true" property="og:description" content="# How to make W7500 Keil Project"><meta data-react-helmet="true" property="og:url" content="https://Stkim92.github.io/document_framework/docs/Product/Mbed-WIZwiki-Platform/WIZwiki-W7500/How_to_create_KEIL_uVision5_new_project_for_W7500">
 
 <link data-react-helmet="true" rel="shortcut icon" href="/document_framework/img/favicon.ico">
 
 
-<link rel="stylesheet" href="/document_framework/styles.7bf677ae.css">
+<link rel="stylesheet" href="/document_framework/styles.18eb9401.css">
 
 
-<link rel="preload" href="/document_framework/styles.95763884.js" as="script">
+<link rel="preload" href="/document_framework/styles.bb3fe71f.js" as="script">
 
-<link rel="preload" href="/document_framework/runtime~main.20307f8f.js" as="script">
+<link rel="preload" href="/document_framework/runtime~main.a383e6be.js" as="script">
 
-<link rel="preload" href="/document_framework/main.00eb5f6d.js" as="script">
+<link rel="preload" href="/document_framework/main.0f381f46.js" as="script">
 
 <link rel="preload" href="/document_framework/1.c6713b66.js" as="script">
 
-<link rel="preload" href="/document_framework/2.a8d07701.js" as="script">
+<link rel="preload" href="/document_framework/2.034270f0.js" as="script">
 
-<link rel="preload" href="/document_framework/3.50a9e84a.js" as="script">
+<link rel="preload" href="/document_framework/3.bc1849bf.js" as="script">
 
-<link rel="preload" href="/document_framework/1be78505.74d7bc80.js" as="script">
+<link rel="preload" href="/document_framework/1be78505.7fa69b6f.js" as="script">
 
-<link rel="preload" href="/document_framework/dc0844a7.fe33d536.js" as="script">
+<link rel="preload" href="/document_framework/dc0844a7.3462c0cc.js" as="script">
 
-<link rel="preload" href="/document_framework/17896441.f7609786.js" as="script">
+<link rel="preload" href="/document_framework/17896441.62770c19.js" as="script">
 
-<link rel="preload" href="/document_framework/3ed9282b.b621da98.js" as="script">
+<link rel="preload" href="/document_framework/6472f09a.69ed4065.js" as="script">
 
 </head>
 <body>
@@ -61,25 +61,25 @@ This fold consists of <strong>main.c</strong>,  <strong>W7500x_conf.h</strong>, 
 And then WIZwiki-W7500 will upload this bin file on itself via the User program you registered.</p><p><img src="/document_framework/img/products/w7500/overview/pdf.jpg"></p><p>If you want to convert this document to the PDF file? Click to [Export to PDF]</p><p>COPYRIGHT 2015 WIZnet Co.,Ltd.</p></div></article><div class="margin-vert--xl"><div class="row"><div class="col"><a href="https://github.com/facebook/docusaurus/edit/master/website/docs/Product/Mbed-WIZwiki-Platform/WIZwiki-W7500/How_to_create_KEIL_uVision5_new_project_for_W7500.md" target="_blank" rel="noreferrer noopener"><svg fill="currentColor" height="1.2em" width="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 40 40" style="margin-right:0.3em;vertical-align:sub"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div></div></div><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#introduction" class="contents__link">Introduction</a><ul><li><a href="#step-1-download-and-install-keil5" class="contents__link">STEP 1. Download and install KEIL5!</a></li><li><a href="#step-2-download-w7500-library" class="contents__link">STEP 2. Download W7500 Library!</a></li><li><a href="#step-3-make-workspace-and-move-the-w7500-library-to-workspace" class="contents__link">STEP 3. make workspace! and move the W7500 Library to workspace!</a></li><li><a href="#step-4-execute-keil5-and-make-new-project" class="contents__link">STEP 4. Execute KEIL5 and make new project!</a></li><li><a href="#step-5-w7500-start-up-code-and-system-code-setting" class="contents__link">STEP 5. W7500 start up code and system code setting!</a></li><li><a href="#step-6-setting-for-include-paths" class="contents__link">STEP 6. setting for include paths</a></li><li><a href="#step-7-memory-setting" class="contents__link">STEP 7. Memory setting!</a></li><li><a href="#step-8-selection-of-peripherals-to-use" class="contents__link">STEP 8. Selection of Peripherals to use</a></li><li><a href="#step-9-setting-user-program-to-use-with-the-created-bin-file" class="contents__link">STEP 9. Setting user program to use with the created bin file</a></li><li><a href="#step-10-compile-the-example" class="contents__link">STEP 10. Compile the example</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Docs</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/document_framework/docs/doc1">Style Guide</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Community</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/questions/tagged/docusaurus">Stack Overflow</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://discordapp.com/invite/docusaurus">Discord</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Social</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/document_framework/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/docusaurus">GitHub</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://twitter.com/docusaurus">Twitter</a></li></ul></div></div><div class="text--center"><div>Copyright © 2020 My Project, Inc. Built with Docusaurus.</div></div></div></footer>
 </div>
 
-<script src="/document_framework/styles.95763884.js"></script>
+<script src="/document_framework/styles.bb3fe71f.js"></script>
 
-<script src="/document_framework/runtime~main.20307f8f.js"></script>
+<script src="/document_framework/runtime~main.a383e6be.js"></script>
 
-<script src="/document_framework/main.00eb5f6d.js"></script>
+<script src="/document_framework/main.0f381f46.js"></script>
 
 <script src="/document_framework/1.c6713b66.js"></script>
 
-<script src="/document_framework/2.a8d07701.js"></script>
+<script src="/document_framework/2.034270f0.js"></script>
 
-<script src="/document_framework/3.50a9e84a.js"></script>
+<script src="/document_framework/3.bc1849bf.js"></script>
 
-<script src="/document_framework/1be78505.74d7bc80.js"></script>
+<script src="/document_framework/1be78505.7fa69b6f.js"></script>
 
-<script src="/document_framework/dc0844a7.fe33d536.js"></script>
+<script src="/document_framework/dc0844a7.3462c0cc.js"></script>
 
-<script src="/document_framework/17896441.f7609786.js"></script>
+<script src="/document_framework/17896441.62770c19.js"></script>
 
-<script src="/document_framework/3ed9282b.b621da98.js"></script>
+<script src="/document_framework/6472f09a.69ed4065.js"></script>
 
 
 </body>
